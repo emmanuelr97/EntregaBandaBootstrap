@@ -1,0 +1,75 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+
+  justify-content: space-around;
+  font-family: arial;
+  color: white;
+}
+body{
+  font-family: arial;
+  text-align: center;
+  background-color: #FDDF97;
+  color: white;
+
+}
+li{
+  display: inline;
+  padding: 1rem 2rem;
+}
+a:hover{
+  color: white;
+}
+
+a{
+  color: grey;
+  text-decoration: none;
+}
+.contenedorPadre{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+  "header header header header"
+  "noticias noticias con1 con2"
+  "footer footer footer footer";
+
+}
+
+.header{
+  grid-area: header;
+}
+.concierto{
+  grid-area: concierto;
+}
+.con1{
+  grid-area: con1;
+}
+.con2{
+  grid-area: con2;
+}
+.footer{
+  display: inline-block;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+
+
+}
+
+.row{
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.main{
+  padding: 2rem 1rem;
+}
+.navbar-brand{
+  padding-left: 2rem;
+}
